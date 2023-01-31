@@ -1,0 +1,103 @@
+
+@import  "../../global.scss";
+
+.messanger{
+    height: calc(100vh - 50px);
+    display: flex;
+
+    //==========================================
+    .chatMenu{
+        flex: 3.5;
+        position: sticky;
+        top:calc(100vh - 90px) ;
+        left: 0;
+        .chatmenuWrapper{
+            padding: 10px;
+            height: 100%;
+            overflow: auto;
+           
+            .chatMenuInput{
+                width: 90%;
+                padding: 10px 0;
+                border: none;
+                border-bottom: 1px solid $gray;
+            }
+        }
+        
+    }
+    //===================================
+    .chatBox{
+        flex: 5.5;
+        .chatboxWrapper{
+            padding: 10px;
+            height: 100%;
+            position: relative;
+            .chatboxTop{
+                overflow: auto;
+                height: calc(100vh - 100px);
+                scrollbar-width: none;
+                &::-webkit-scrollbar{
+                    display: none !important;
+                }
+            }
+            .chatboxBottom{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border: 1px solid $mainColor;
+                border-radius: 3px;
+                height: 50px;
+                overflow: hidden;
+              margin-top:0 auto;
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              background-color: $white;
+                 .chatMessageInput {
+                        width:80%;
+                        height: 30px;
+                        border: none;
+                        margin: 10px 0px;
+                 
+                    }
+                .chatSubmitBtn{
+                    color: white;
+                    background-color: $mainColor;
+                    padding: 10px ;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+
+        }
+    }
+    //============================================
+    .chatOnline{
+        flex: 3;
+        @include mobile{
+            display: none;
+        }
+        .chatOnlineWrapper{
+            padding: 10px;
+            height: 100%;
+            h3{
+                margin: 10px  ;
+                text-transform: capitalize;
+                color: $gray;
+            }
+        }
+    }
+
+}
+
+.recomend{
+    position: absolute;
+    top: 20%;
+    font-size: 50px;
+    padding: 100px;
+    color: rgb(88, 79, 79);
+}

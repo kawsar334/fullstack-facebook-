@@ -1,0 +1,88 @@
+@import "../../global.scss";
+
+.share{
+    width: 100%;
+    height: 170px;
+    border-radius: 10px;
+    box-shadow: 0 0 1px 3px rgb(0,0,0,0.1);
+    .shareWrapper{
+        padding: 20px; 
+        position: relative;
+        .shareTop{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            gap: 10px;
+           
+            input{
+                    width: 95%;
+                    border: none;
+                    outline: none;
+
+            }
+            img{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+
+
+                 // =====
+                 .shareHr {
+                     margin: 10px 20px;
+                 }
+        
+                 // ===
+                 .shareBottom {
+                    width: 90%;
+                    padding-right: 30px;
+                    margin: 0 auto;
+                     .shareOptions {
+                         display: flex;
+                         justify-content: space-around;
+                         align-items: center;
+        
+                         .shareOption {
+                             display: flex;
+                             justify-content: center;
+                             align-items: center;
+                             padding: 5px;
+                             cursor: pointer;
+                             gap: 5px;
+        
+                             i {
+                                 font-size: 18px;
+        
+                             }
+        
+                             .shareOptionText {
+                                 font-size: 14px;
+                                 font-weight: 500;
+                             }
+                         }
+                     }
+        
+                 }
+                 .shareButton{
+                    position: absolute;
+                    right: 20px;
+                    bottom: 20px;
+                    padding: 5px 10px;
+                    background-color: green;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    color: $white;
+
+                 }
+    }
+   
+}
+.URLIMG{
+    width: 70px;
+    height: 70px;
+    margin: 20px;
+    object-fit: cover;
+}

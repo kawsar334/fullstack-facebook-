@@ -1,0 +1,35 @@
+.comment{
+    
+    margin-bottom: 30px;
+    padding: 0px 20px;
+    .commentWrapper{
+        .commentProfile{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            
+            img{
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-right: 5px;
+                cursor: pointer;
+            }
+            .commentTime{
+                margin-left: 20px;
+                font-size: 12px;
+                color: #555;
+            }
+            span{
+                
+            }
+        }
+        .commentDesc{
+            color: #000;
+            padding: 0px 20px;
+            font-size: 13px;
+        }
+
+    }
+}

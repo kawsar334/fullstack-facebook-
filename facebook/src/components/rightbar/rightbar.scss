@@ -1,0 +1,85 @@
+
+@import  "../../global.scss";
+
+.rightbar{
+    position: sticky;
+
+    top: 50px;
+    right: 0;
+    height: calc(50px - 100vh);
+    flex: 3.5;
+    @include mobile{
+        flex: 0;
+    }
+    .rightbarwrapper{
+        padding: 20px 20px 0 0;
+        @include mobile{
+            display: none;
+        }
+        .birthdayContainer{
+            display: flex;
+            align-items: center;
+            .birthdayImg{
+                width: 40px;
+                height: 40px;
+                margin-right: 10px;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+            .birthdayText{
+                font-weight: 300 ;
+                font-size: 15px ;
+            }
+        }
+        // ===
+
+        .rightbarAd{
+            width: 100%;
+            border-radius:10px ;
+            height:200px;
+            margin: 20px 0px ;
+            object-fit: cover;
+        }
+        // ===
+        .rightbarTitle{
+            margin: 10px 0px;
+            font-weight: 700;
+            text-transform: capitalize;
+        }
+        .rightbarfriendList{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            .rightbarFriend{
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+                cursor: pointer;
+                .rightbarProfileImgContainer{
+                    margin-right: 10px;
+                    position: relative;
+                    img{
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+                    .rightbarOnline{
+                        position: absolute;
+                        width: 12px;
+                        height: 12px;
+                        background-color: green;
+                        border-radius: 50%;
+                        top: 0px;
+                        right: 3px;
+                        border: 2px solid white;
+                    }
+                }
+                .rightUsername{
+                    font-weight: 500;
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,42 @@
+
+@import "../../global.scss";
+
+.cOnline{
+    display: flex;
+    font-weight: 500;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 10px 0px;
+    cursor: pointer;
+    .chatOnlineFriend{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .chatOnlineImgContainer{
+            position: relative;
+            
+            img{
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    border: 1px solid $white;
+            }
+            .chatOnlineBadge{
+                color: gray;
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: green;
+            }
+        }
+
+        .chatOnlineUserName{
+
+
+        }
+    }
+}

@@ -1,0 +1,122 @@
+
+@import "../../global.scss";
+
+.topbarContainer{
+    display: flex;
+    height: 50px;
+    width: 100%;
+    background-color: $mainColor;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+//humburger menu 
+.topbarMenu{
+    margin-left: 20px ;
+    cursor: pointer;
+    color: $white;
+    font-size: 40px;
+    opacity: 0;
+    @include mobile{
+        opacity: 1;
+
+    }
+
+}
+    // ==================================TOP LEFT START ==================================================================
+    .topbarLeft{
+
+        flex: 3;
+        .logo{
+            font-size: 24px;
+            color: $white;
+            font-weight: 700;
+            margin-left: 100px;
+            cursor: pointer;
+            @include mobile {
+                display: none;
+                }
+        }
+
+    }
+// ===================================TOP CENTER START ======================================================================
+    .topbarCenter{
+        flex: 5;
+        position: relative;
+        .searchInput{
+            width: 100%;
+            height: 30px;
+            background-color: $white;
+            border-radius: 30px;
+            outline: none;
+            border: none;
+            padding-left: 5px;
+
+            &::placeholder{
+                color: $gray;
+                text-transform: capitalize;
+            }
+        }
+        .searchIcon{
+            position: absolute;
+            right: 10px;
+            top: 30%;
+            color: $gray;
+        }
+    }
+// ============================TOP RIGHT START==============================================================================
+    .topbarRight{
+        flex: 4;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        color: $white;
+        .topbarLinks{
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            .topbarLink{
+                color: $white;
+                text-transform: capitalize;
+                text-decoration: none;
+                    @include mobile{
+                        display: none;
+                    }
+            }
+        }
+        .topbarIcons{
+            display: flex;
+            gap: 10px;
+            .topbarIconItem{
+                margin-right: 15px;
+                position: relative;
+                cursor:pointer;
+
+                .topbarIconBadge{
+                    position: absolute;
+                    bottom: 10px;
+                    background-color: $crimson;
+                    left: 10px;
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 12px;
+                }
+            }
+
+        }
+       .topbarImg{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+        cursor: pointer;
+       }
+
+    }
+
+}

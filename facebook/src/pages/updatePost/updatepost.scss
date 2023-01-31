@@ -1,0 +1,60 @@
+@import "../../global.scss";
+
+
+.updatePost{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh; 
+    .updatewrapper{
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .updateForm{
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            label{
+                position: relative; 
+                .uploadText{
+                    position: absolute;
+                    top: 40%;
+                    left: 40%;
+                    background-color: $crimson;
+                    cursor: pointer;
+                    padding: 10px 20px ;
+                    color: $white;
+                }
+            }
+            h1{
+                margin: 10px ;
+                color: #555;
+                text-align: center;
+            }
+            img{
+                width: 600px !important;
+                height: 300px;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+            input{
+                margin: 10px;
+                width: 100%;
+                padding: 10px ;
+            }
+            button{
+                background-color: teal;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                border: 1px solid $mainColor;
+                cursor: pointer;
+                
+            }
+        }
+    }
+}
