@@ -15,11 +15,19 @@
         align-items: center;
         gap: 10px;
         flex-direction: row-reverse;
+        @include mobile{
+            flex-direction: column;
+            width: 90%;
+        }
 
         .registerLeft {
             flex: 1;
             // background-color: rgb(234, 241, 241);
             padding: 10px 20px;
+            @include mobile{
+                width: 100%;
+
+            }
 
             .registerHeader {
                 color: $mainColor;
@@ -46,6 +54,10 @@
             border-radius: 5px;
 
             // box-shadow: 0 0 1px 3px rgba(0,0,0,0.1);
+            @include mobile {
+                    width: 85%;
+            
+                }
             .registerForm {
                 width: 100%;
                 display: flex;
